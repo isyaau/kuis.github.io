@@ -14,21 +14,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Apakah ini simbol dari HTML5?",
-        imgSrc : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png",
+        imgSrc : "unnamed.png",
         choiceA : "Benar",
         choiceB : "Salah",
         choiceC : "Salah",
         correct : "A"
     },{
         question : "Apakah ini simbol dari CSS3?",
-        imgSrc : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png",
+        imgSrc : "unnamed.png",
         choiceA : "Salah",
         choiceB : "Benar",
         choiceC : "Salah",
         correct : "B"
     },{
         question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "https://academy.alterra.id/blog/wp-content/uploads/2021/07/Logo-Javascript.png",
+        imgSrc : "unnamed.png",
         choiceA : "Salah",
         choiceB : "Salah",
         choiceC : "Benar",
@@ -128,10 +128,10 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "https://play-lh.googleusercontent.com/mlFtILzIoQqhJdoiRJj47m7eBBW47E0Vc_5siY8cuTyEP2Gz57oqUHCauQk_g3FKv_Pv" :
-              (scorePerCent >= 60) ? "https://w7.pngwing.com/pngs/495/434/png-transparent-emoji-meh-sticker-emoticon-emoji-face-orange-heart.png" :
-              (scorePerCent >= 40) ? "https://www.pngmart.com/files/12/WhatsApp-Sticker-Emoji-PNG-File.png" :
-              (scorePerCent >= 20) ? "https://img-07.stickers.cloud/packs/67e7cd0e-ef7c-4705-9faa-ce64997d10e3/webp/a5794415-b83d-4cd8-abf2-b6545997c5ad.webp" :
+    let img = (scorePerCent >= 80) ? "unnamed.png" :
+              (scorePerCent >= 60) ? "unnamed.png" :
+              (scorePerCent >= 40) ? "unnamed.png" :
+              (scorePerCent >= 20) ? "unnamed.png" :
               "img/1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
