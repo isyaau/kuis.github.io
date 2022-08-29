@@ -134,6 +134,6 @@ function scoreRender(){
               (scorePerCent >= 20) ? "20.png" :
               "img/1.png";
     
-    scoreDiv.innerHTML = "<img style="width:200px; height:200px" src="+ img +">";
+    scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
