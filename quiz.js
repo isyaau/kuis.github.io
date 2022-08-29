@@ -132,7 +132,7 @@ function scoreRender(){
               (scorePerCent >= 60) ? "40.png" :
               (scorePerCent >= 40) ? "30.png" :
               (scorePerCent >= 20) ? "20.png" :
-              "img/1.png";
+              "unnamed.png";
     
     scoreDiv.innerHTML = "<img width="200" height="200" src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
