@@ -14,21 +14,21 @@ const scoreDiv = document.getElementById("scoreContainer");
 let questions = [
     {
         question : "Apakah ini simbol dari HTML5?",
-        imgSrc : "unnamed.png",
+        imgSrc : "HTML5.png",
         choiceA : "Benar",
         choiceB : "Salah",
         choiceC : "Salah",
         correct : "A"
     },{
         question : "Apakah ini simbol dari CSS3?",
-        imgSrc : "unnamed.png",
+        imgSrc : "CSS3.png",
         choiceA : "Salah",
         choiceB : "Benar",
         choiceC : "Salah",
         correct : "B"
     },{
         question : "Apakah ini simbol dari JavaScript?",
-        imgSrc : "unnamed.png",
+        imgSrc : "JS.png",
         choiceA : "Salah",
         choiceB : "Salah",
         choiceC : "Benar",
@@ -128,10 +128,10 @@ function scoreRender(){
     const scorePerCent = Math.round(100 * score/questions.length);
     
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "unnamed.png" :
-              (scorePerCent >= 60) ? "unnamed.png" :
-              (scorePerCent >= 40) ? "unnamed.png" :
-              (scorePerCent >= 20) ? "unnamed.png" :
+    let img = (scorePerCent >= 80) ? "80.png" :
+              (scorePerCent >= 60) ? "40.png" :
+              (scorePerCent >= 40) ? "30.png" :
+              (scorePerCent >= 20) ? "20.png" :
               "img/1.png";
     
     scoreDiv.innerHTML = "<img src="+ img +">";
